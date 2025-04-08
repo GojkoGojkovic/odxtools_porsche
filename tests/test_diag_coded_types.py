@@ -4,7 +4,7 @@ from xml.etree import ElementTree
 
 from packaging.version import Version
 
-import odxtools.uds as uds
+import odxtools_porsche.uds as uds
 from odxtools.compumethods.compucategory import CompuCategory
 from odxtools.compumethods.compuinternaltophys import CompuInternalToPhys
 from odxtools.compumethods.compurationalcoeffs import CompuRationalCoeffs

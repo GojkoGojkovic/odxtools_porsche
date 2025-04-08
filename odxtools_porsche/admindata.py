@@ -56,11 +56,12 @@ class AdminData:
 
         skipped_ref_ids : set[str] = set()
         for dr in self.doc_revisions:
-            if "_Porsche_AG" not in dr.team_member_ref.ref_id:
-                dr._resolve_odxlinks(odxlinks)
-            elif  dr.team_member_ref.ref_id not in skipped_ref_ids:
-                print("[Warning] odxtools_porsche parser skipped team_ref_resolution: ", dr.team_member_ref.ref_id)
-                skipped_ref_ids.add(dr.team_member_ref.ref_id)
+            if dr.team_member_ref:
+                if "_Porsche_AG" not in dr.team_member_ref.ref_id:
+                    dr._resolve_odxlinks(odxlinks)
+                elif  dr.team_member_ref.ref_id not in skipped_ref_ids:
+                    print("[Warning] odxtools_porsche parser skipped team_ref_resolution: ", dr.team_member_ref.ref_id)
+                    skipped_ref_ids.add(dr.team_member_ref.ref_id)
 
     def _resolve_snrefs(self, context: SnRefContext) -> None:
         for cdi in self.company_doc_infos:

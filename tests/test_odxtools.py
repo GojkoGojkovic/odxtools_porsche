@@ -3,8 +3,8 @@ import pickle
 import unittest
 from dataclasses import dataclass
 
-import odxtools
-import odxtools.exceptions
+import odxtools_porsche
+import odxtools_porsche.exceptions
 from odxtools.exceptions import OdxError
 from odxtools.loadfile import load_pdx_file
 from odxtools.nameditemlist import NamedItemList

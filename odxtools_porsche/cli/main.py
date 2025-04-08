@@ -3,8 +3,8 @@ import argparse
 import importlib
 from typing import Any
 
-import odxtools
-import odxtools.exceptions
+import odxtools_porsche
+import odxtools_porsche.exceptions
 
 from ..version import __version__ as odxtools_version
 from .dummy_sub_parser import DummyTool

@@ -18,7 +18,7 @@ import sys
 
 sys.path.insert(0, os.path.abspath('..'))
 
-import odxtools
+import odxtools_porsche
 
 # -- Project information -----------------------------------------------------
 

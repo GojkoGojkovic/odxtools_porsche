@@ -1,3 +1,4 @@
+
 [build-system]
 requires = [
     "setuptools >= 59",
@@ -45,7 +46,7 @@ dependencies = [
     "rich >= 13.7",
     "typing_extensions >= 4.9",
 ]
-dynamic = ["version"]
+version = "0.0.2"
 
 [project.optional-dependencies]
 browse-tool = [
@@ -64,7 +65,7 @@ examples = [
 ]
 
 all = [
-     "odxtools[browse-tool,test,examples]"
+     "odxtools_porsche[browse-tool,test,examples]"
 ]
 
 [project.urls]
@@ -73,13 +74,13 @@ all = [
 "Repository" = "https://github.com/GojkoGojkovic/odxtools_porsche"
 
 [project.scripts]
-odxtools = "odxtools.__init__:_main"
+odxtools = "odxtools_porsche.__init__:_main"
 
 [tool.setuptools]
-packages = [ "odxtools" ]
+packages = [ "odxtools_porsche" ]
 
 [tool.setuptools_scm]
-write_to = "odxtools/version.py"
+write_to = "odxtools_porsche/version.py"
 
 [tool.mypy]
 
@@ -110,7 +111,7 @@ exclude = [
 ]
 
 [tool.ruff.lint.isort]
-known-first-party = ["odxtools"]
+known-first-party = ["odxtools_porsche"]
 
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["F401"]
@@ -125,5 +126,5 @@ split_penalty_after_opening_bracket=1000
 
 [tool.pytest.ini_options]
 filterwarnings = [
-    "error::odxtools.exceptions.DecodeError",
+    "error::odxtools_porsche.exceptions.DecodeError",
 ]

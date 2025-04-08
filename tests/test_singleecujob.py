@@ -9,7 +9,7 @@ from xml.etree import ElementTree
 import jinja2
 from packaging.version import Version
 
-import odxtools
+import odxtools_porsche
 from odxtools.additionalaudience import AdditionalAudience
 from odxtools.audience import Audience
 from odxtools.compumethods.compucategory import CompuCategory
@@ -261,7 +261,7 @@ class TestSingleEcuJob(unittest.TestCase):
 
     def test_write_odx(self) -> None:
         # Setup jinja environment
-        __module_filename = inspect.getsourcefile(odxtools)
+        __module_filename = inspect.getsourcefile(odxtools_porsche)
         assert isinstance(__module_filename, str)
         templates_dir = os.path.sep.join([os.path.dirname(__module_filename), "templates"])
         jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(templates_dir))

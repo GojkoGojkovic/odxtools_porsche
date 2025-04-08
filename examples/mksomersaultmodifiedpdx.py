@@ -8,8 +8,8 @@ import argparse
 from copy import deepcopy
 from typing import TypeVar
 
-import odxtools
-import odxtools.uds as uds
+import odxtools_porsche
+import odxtools_porsche.uds as uds
 from examples import somersaultecu
 from odxtools.description import Description
 from odxtools.diaglayers.diaglayer import DiagLayer

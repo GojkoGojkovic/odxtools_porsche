@@ -7,7 +7,7 @@ from xml.etree import ElementTree
 import jinja2
 from packaging.version import Version
 
-import odxtools
+import odxtools_porsche
 from odxtools.compumethods.compucategory import CompuCategory
 from odxtools.compumethods.compucodecompumethod import CompuCodeCompuMethod
 from odxtools.compumethods.compuconst import CompuConst
@@ -39,7 +39,7 @@ class TestLinearCompuMethod(unittest.TestCase):
         """Prepares the jinja environment and the sample linear compumethod"""
 
         def _get_jinja_environment() -> jinja2.environment.Environment:
-            __module_filename = inspect.getsourcefile(odxtools)
+            __module_filename = inspect.getsourcefile(odxtools_porsche)
             assert isinstance(__module_filename, str)
             templates_dir = os.path.sep.join([os.path.dirname(__module_filename), "templates"])
 
@@ -627,7 +627,7 @@ class TestTabIntpCompuMethod(unittest.TestCase):
         """Prepares the jinja environment and the sample tab-intp compumethod"""
 
         def _get_jinja_environment() -> jinja2.environment.Environment:
-            __module_filename = inspect.getsourcefile(odxtools)
+            __module_filename = inspect.getsourcefile(odxtools_porsche)
             assert isinstance(__module_filename, str)
             templates_dir = os.path.sep.join([os.path.dirname(__module_filename), "templates"])
 

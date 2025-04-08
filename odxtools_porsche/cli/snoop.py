@@ -8,8 +8,8 @@ from typing import Any
 
 import can
 
-import odxtools.isotp_state_machine as ism
-import odxtools.uds as uds
+import odxtools_porsche.isotp_state_machine as ism
+import odxtools_porsche.uds as uds
 from odxtools.diaglayers.protocol import Protocol
 from odxtools.exceptions import DecodeError
 from odxtools.isotp_state_machine import IsoTpStateMachine

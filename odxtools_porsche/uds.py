@@ -2,7 +2,7 @@
 from enum import IntEnum
 from itertools import chain
 
-import odxtools.obd as obd
+import odxtools_porsche.obd as obd
 
 
 class UDSSID(IntEnum):

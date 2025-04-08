@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MIT
 import argparse
 
-import odxtools
+import odxtools_porsche
 from examples import somersaultecu
 
 argparser = argparse.ArgumentParser(

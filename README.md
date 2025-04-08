@@ -138,7 +138,7 @@ python3 -m odxtools list -a "$YOUR_PDX_FILE"
 - Load an ODX database from file `somersault.pdx`:
 
   ```python
-  import odxtools
+  import odxtools_porsche
 
   db = odxtools.load_pdx_file("somersault.pdx")
   ```
@@ -232,7 +232,7 @@ odxtools to load a non-conforming file in non-strict mode, and after
 this is done, enables the safety checks again:
 
   ```python
-  import odxtools
+  import odxtools_porsche
 
   [...]
 
@@ -363,7 +363,7 @@ optional arguments:
                         Print full objects instead of selected and formatted attributes
 ```
 
-The options `--variants` and `--services` can be used to specify which services should be printed.  
+The options `--variants` and `--services` can be used to specify which services should be printed.
 If the `--params` option is specified, the message layout and information about the service parameters (reuest as well as responses) are printed for all specified variants/services.
 If the `--global-negative-responses` option is specified, all global negative responses are printed for all specified variants.
 If the `--dops` option is specified, a list of all data object properties (their names) is printed for all specified variants/services.
@@ -407,7 +407,7 @@ The services of 'somersault_lazy' are:
         +-----+-----+-----+-----+-----+-----+-----+-----+
       2 | num_flips(8 bits)                             |
         +-----+-----+-----+-----+-----+-----+-----+-----+
-   
+
   Positive Response Properties:
    Number of Positive Responses: 1
    Positive Responses: [grudging_forward]
@@ -425,7 +425,7 @@ The services of 'somersault_lazy' are:
         +-----+-----+-----+-----+-----+-----+-----+-----+
       1 | num_flips_done(8 bits)                        |
         +-----+-----+-----+-----+-----+-----+-----+-----+
-   
+
   Negative Response Properties:
    Number of Negative Responses: 1
    Negative Responses: [flips_not_done]
@@ -450,7 +450,7 @@ The services of 'somersault_lazy' are:
         +-----+-----+-----+-----+-----+-----+-----+-----+
       3 | flips_successfully_done(8 bits)               |
         +-----+-----+-----+-----+-----+-----+-----+-----+
-   
+
 ```
 
 ### The `browse` subcommand
@@ -598,7 +598,7 @@ somersault_lazy, somersault_assiduous
   1 | id   |         1 |          8 | CODED-CONST | A_UINT32  | 0x00  | coded value |
 
   Message format of a request:
-           7     6     5     4     3     2     1     0  
+           7     6     5     4     3     2     1     0
         +-----+-----+-----+-----+-----+-----+-----+-----+
       0 | sid (8 bits)                                  |
         +-----+-----+-----+-----+-----+-----+-----+-----+
@@ -616,7 +616,7 @@ somersault_lazy, somersault_assiduous
   1 | can_do_backward_flips |         1 |          8 | VALUE       | A_UNICODE2STRING |       |             | boolean
 
   Message format of a positive response:
-           7     6     5     4     3     2     1     0  
+           7     6     5     4     3     2     1     0
         +-----+-----+-----+-----+-----+-----+-----+-----+
       0 | sid (8 bits)                                  |
         +-----+-----+-----+-----+-----+-----+-----+-----+
@@ -635,7 +635,7 @@ somersault_lazy, somersault_assiduous
   2 | response_code |        2 |          8 | VALUE                  | A_UINT32  |       |             | error_code
 
   Message format of a negative response:
-           7     6     5     4     3     2     1     0  
+           7     6     5     4     3     2     1     0
         +-----+-----+-----+-----+-----+-----+-----+-----+
       0 | sid (8 bits)                                  |
         +-----+-----+-----+-----+-----+-----+-----+-----+

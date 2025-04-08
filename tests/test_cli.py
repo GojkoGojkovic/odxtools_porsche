@@ -5,14 +5,14 @@ from argparse import Namespace
 from types import ModuleType
 from unittest.mock import MagicMock, patch
 
-import odxtools.cli.compare as compare
-import odxtools.cli.decode as decode
-import odxtools.cli.find as find
-import odxtools.cli.list as list_tool
+import odxtools_porsche.cli.compare as compare
+import odxtools_porsche.cli.decode as decode
+import odxtools_porsche.cli.find as find
+import odxtools_porsche.cli.list as list_tool
 
 browse: ModuleType | None
 try:
-    import odxtools.cli.browse as browse
+    import odxtools_porsche.cli.browse as browse
 except ImportError:
     browse = None
 

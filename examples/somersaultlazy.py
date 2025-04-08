@@ -14,7 +14,7 @@ import isotp
 import isotp.tpsock
 import somersaultecu
 
-import odxtools.uds as uds
+import odxtools_porsche.uds as uds
 from odxtools.exceptions import DecodeError, odxrequire
 from odxtools.message import Message
 from odxtools.odxtypes import ParameterValueDict

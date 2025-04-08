@@ -9,7 +9,7 @@ from typing import Any
 
 import jinja2
 
-import odxtools
+import odxtools_porsche
 
 from .database import Database
 from .odxtypes import bool_to_odxstr
@@ -53,7 +53,7 @@ def make_bool_xml_attrib(attrib_name: str, attrib_val: bool | None) -> str:
     return make_xml_attrib(attrib_name, bool_to_odxstr(attrib_val))
 
 
-__module_filename = inspect.getsourcefile(odxtools)
+__module_filename = inspect.getsourcefile(odxtools_porsche)
 assert isinstance(__module_filename, str)
 __templates_dir = os.path.sep.join([os.path.dirname(__module_filename), "templates"])
 

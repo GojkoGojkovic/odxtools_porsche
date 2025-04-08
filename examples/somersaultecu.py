@@ -10,7 +10,7 @@ from xml.etree import ElementTree
 
 from packaging.version import Version
 
-import odxtools.uds as uds
+import odxtools_porsche.uds as uds
 from odxtools.additionalaudience import AdditionalAudience
 from odxtools.admindata import AdminData
 from odxtools.audience import Audience

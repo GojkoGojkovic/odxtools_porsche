@@ -22,7 +22,7 @@ Examples:
 
 .. code-block:: python
 
-    import odxtools
+    import odxtools_porsche
 
     db = odxtools.load_file("my_diag_db.pdx")
 
