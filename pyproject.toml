@@ -68,9 +68,9 @@ all = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/mercedes-benz/odxtools"
-"Bug Tracker" = "https://github.com/mercedes-benz/odxtools/issues"
-"Repository" = "https://github.com/mercedes-benz/odxtools"
+"Homepage" = "https://github.com/GojkoGojkovic/odxtools_porsche"
+"Bug Tracker" = "https://github.com/GojkoGojkovic/odxtools_porsche/issues"
+"Repository" = "https://github.com/GojkoGojkovic/odxtools_porsche"
 
 [project.scripts]
 odxtools = "odxtools.__init__:_main"
